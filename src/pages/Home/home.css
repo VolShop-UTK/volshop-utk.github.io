@@ -12,6 +12,7 @@
     display: grid;
     gap: 1em;
     padding: 1em;
+    margin-top: 4em;
 
     /* 3 columns by default */
     grid-template-columns: repeat(3, 1fr);
