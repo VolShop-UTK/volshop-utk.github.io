@@ -1,0 +1,32 @@
+.home-content {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home-card-grid {
+    width: 80%;
+    display: grid;
+    gap: 1em;
+    padding: 1em;
+
+    /* 3 columns by default */
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* 2 columns under 1500px */
+@media (max-width: 1500px) {
+    .home-card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* 1 column under 600px */
+@media (max-width: 600px) {
+    .home-card-grid {
+        grid-template-columns: 1fr;
+    }
+}

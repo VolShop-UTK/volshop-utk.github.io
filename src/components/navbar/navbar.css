@@ -1,0 +1,32 @@
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    background: #0f0f0fcc !important;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #262626 !important;
+    padding: 15px 0;
+}
+
+.navbar-container {
+    padding: 5px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-logo {
+    height: 20px;
+}
+
+.navbar-link {
+    padding: 0 15px;
+    color: white;
+}
+.navbar-link:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 2px;
+}

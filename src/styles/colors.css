@@ -1,0 +1,24 @@
+:root {
+    --ut-orange: #ff8200;
+    --ut-white: #ffffff;
+    --smokey-grey: #4b4b4b;
+    --summit-blue: #489fdf;
+
+    --primary: var(--smokey-grey);
+    --secondary: var(--ut-orange);
+    --background-color: #1a1a1a;
+
+    --primary-text-color: var(--ut-white);
+    --secondary-text-color: var(--background-color);
+    --link-color: var(--summit-blue);
+
+    --success: #2ecc71;
+    --warning: #f1c40f;
+    --error: #e74c3c;
+    --successMessageBackground: #aaecc6;
+    --warningMessageBackground: #f6e58d;
+    --errorMessageBackground: #f5b7b1;
+    --success-text-color: #0f4225;
+    --warning-text-color: #483d06;
+    --error-text-color: #4b0f0a;
+}
