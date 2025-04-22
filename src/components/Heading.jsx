@@ -5,7 +5,10 @@ const Heading = ({ level = 2, id, children }) => {
     return (
         <Tag id={id} className='doc-heading'>
             {id && (
-                <a href={`#${id}`} className='anchor-link' aria-label='Link to this section'>
+                <a
+                    href={`#${id.replace(' ', '-').toLowerCase()}`}
+                    className='anchor-link'
+                    aria-label='Link to this section'>
                     #
                 </a>
             )}
