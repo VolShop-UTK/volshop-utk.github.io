@@ -1,8 +1,3 @@
-:root {
-    --vp-layout-max-width: 1440px;
-    --vp-sidebar-width: 272px;
-}
-
 .sidenav {
     position: fixed;
     top: 0;
@@ -35,4 +30,13 @@
 .sidenav nav ul li ul li {
     margin-left: 1em;
     font-weight: normal;
+}
+
+.sidebar-link {
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar-link.active {
+    color: var(--link-color);
 }

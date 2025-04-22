@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../styles/sidenav.css';
+import '../../styles/components/sidenav.css';
 
 function SideNav() {
     return (
