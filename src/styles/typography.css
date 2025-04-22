@@ -1,17 +1,54 @@
 * {
     color: var(--primary-text-color);
+    line-height: 1.6;
 }
 
 h1 {
-    font-size: 3.2em;
-    line-height: 1.1;
+    font-size: 2.986rem;
+    padding: 0.5em 0;
 }
 
-a {
+h2 {
+    font-size: 2.488rem;
+    padding: 0.5em 0;
+}
+
+h3 {
+    font-size: 2.074rem;
+    padding: 0.5em 0;
+}
+h4 {
+    font-size: 1.728rem;
+    padding: 0.5em 0;
+}
+
+h5 {
+    font-size: 1.44rem;
+    padding: 0.5em 0;
+}
+
+h6 {
+    font-size: 1.2rem;
+    padding: 0.5em 0;
+}
+
+p {
+    font-size: 1rem;
+    padding: 0.5em 0;
+}
+
+hr {
+    border-color: #ffffff4e;
+    margin-bottom: 2em;
+}
+
+a,
+a code {
     font-weight: 500;
     color: var(--link-color);
     text-decoration: inherit;
 }
-a:hover {
+a:hover,
+a:hover code {
     color: #535bf2;
 }

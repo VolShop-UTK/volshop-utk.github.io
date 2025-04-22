@@ -1,0 +1,10 @@
+.extension-technologies {
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+}
+
+.extension-technologies div {
+    margin: 0;
+    flex: 1;
+}

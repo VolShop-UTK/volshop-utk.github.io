@@ -2,7 +2,7 @@ import React from 'react';
 import './navbar.css';
 import { NavLink } from 'react-router';
 import logo from '../../assets/VolShopCMYK.png';
-import github from '../../assets/github.svg';
+import github from '../../assets/icons/github.svg';
 
 function Navbar() {
     return (

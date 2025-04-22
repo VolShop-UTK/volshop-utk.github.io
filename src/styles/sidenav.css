@@ -1,0 +1,38 @@
+:root {
+    --vp-layout-max-width: 1440px;
+    --vp-sidebar-width: 272px;
+}
+
+.sidenav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 800;
+    width: 15%;
+    max-width: 300px;
+    padding-left: 3em;
+
+    background: #000000cc !important;
+    backdrop-filter: blur(10px);
+    border-right: 1px solid #262626 !important;
+
+    overflow: auto;
+}
+
+.sidenav nav {
+    margin: 1em;
+    margin-top: 100px;
+}
+
+.sidenav nav ul li {
+    list-style-type: none;
+    margin: 0.25em;
+    padding: 0.5em 0;
+    font-weight: bold;
+}
+
+.sidenav nav ul li ul li {
+    margin-left: 1em;
+    font-weight: normal;
+}
