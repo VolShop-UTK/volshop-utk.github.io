@@ -53,7 +53,9 @@ function Submodule({ props }) {
                     Style Sheet: <i>{props.styleSheet}</i>
                 </p>
             ) : null}
-            {props.description != '' ? <p>{props.description}</p> : null}
+            {props.description != '' ? (
+                <ReactMarkdown components={markdownComponents}>{props.description}</ReactMarkdown>
+            ) : null}
 
             {props.callout != '' ? (
                 <div className='callout'>
@@ -61,6 +63,7 @@ function Submodule({ props }) {
                 </div>
             ) : null}
 
+            <div style={{ height: '1em', margin: '0' }}></div>
             <Heading level={6} id={`${props.name}-config-fields`}>
                 Configurable Fields
             </Heading>

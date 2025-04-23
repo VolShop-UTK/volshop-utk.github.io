@@ -26,7 +26,7 @@ function SideNav() {
                         <ul>
                             <li>
                                 <Link
-                                    to='/extension/about-us'
+                                    to='/extension/modules/about-us'
                                     className={`sidebar-link ${
                                         activeLink === 'aboutUs' ? 'active' : ''
                                     }`}
@@ -36,7 +36,7 @@ function SideNav() {
                             </li>
                             <li>
                                 <Link
-                                    to='/extension/big-orange-deal'
+                                    to='/extension/modules/big-orange-deal'
                                     className={`sidebar-link ${
                                         activeLink === 'bod' ? 'active' : ''
                                     }`}
@@ -44,9 +44,36 @@ function SideNav() {
                                     Big Orange Deal
                                 </Link>
                             </li>
-                            <li>Components</li>
-                            <li>Controller</li>
-                            <li>Customer Service Info</li>
+                            <li>
+                                <Link
+                                    to='/extension/modules/components'
+                                    className={`sidebar-link ${
+                                        activeLink === 'component' ? 'active' : ''
+                                    }`}
+                                    onClick={() => handleLinkClick('component')}>
+                                    Components
+                                </Link>
+                            </li>
+                            <li>
+                                <Link
+                                    to='/extension/modules/controller'
+                                    className={`sidebar-link ${
+                                        activeLink === 'controller' ? 'active' : ''
+                                    }`}
+                                    onClick={() => handleLinkClick('controller')}>
+                                    Controller
+                                </Link>
+                            </li>
+                            <li>
+                                <Link
+                                    to='/extension/modules/customer-service-info'
+                                    className={`sidebar-link ${
+                                        activeLink === 'customer-service' ? 'active' : ''
+                                    }`}
+                                    onClick={() => handleLinkClick('customer-service')}>
+                                    Customer Service Info
+                                </Link>
+                            </li>
                             <li>Footer</li>
                             <li>Home</li>
                             <li>Total Access</li>

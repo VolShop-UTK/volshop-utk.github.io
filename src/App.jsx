@@ -6,8 +6,12 @@ import AppPage from './pages/AppPage/AppPage.jsx';
 import ExtensionPage from './pages/ExtensionPage/ExtensionPage.jsx';
 import AboutUsPage from './pages/ExtensionPage/Modules/aboutUsPage.jsx';
 import ExtensionLandingPage from './pages/ExtensionPage/Modules/ExtensionLandingPage.jsx';
+import ModulesComponents from './pages/ExtensionPage/Modules/Components.jsx';
 import Components from './pages/ExtensionPage/Style/Components.jsx';
 import BigOrangeDealPage from './pages/ExtensionPage/Modules/BigOrangeDealPage.jsx';
+import Controller from './pages/ExtensionPage/Modules/Controller.jsx';
+import StyleGuide from './pages/ExtensionPage/Style/StyleGuide.jsx';
+import CustomerServiceInfo from './pages/ExtensionPage/Modules/CustomerServiceInfo.jsx';
 
 function App() {
     document.querySelectorAll('h2, h3, h4, h5, h6').forEach(function (header) {
@@ -20,14 +24,19 @@ function App() {
         }
     });
     return (
-        <Router basename='/volshop-utk.github.io'>
+        <Router>
             <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='/app' element={<AppPage />} />
                 <Route path='/extension' element={<ExtensionPage />}>
                     <Route index element={<ExtensionLandingPage />} />
-                    <Route path='about-us' element={<AboutUsPage />} />
-                    <Route path='big-orange-deal' element={<BigOrangeDealPage />} />
+                    <Route path='modules/about-us' element={<AboutUsPage />} />
+                    <Route path='modules/big-orange-deal' element={<BigOrangeDealPage />} />
+                    <Route path='modules/components' element={<ModulesComponents />} />
+                    <Route path='modules/controller' element={<Controller />} />
+                    <Route path='modules/customer-service-info' element={<CustomerServiceInfo />} />
+
+                    <Route path='style-guidelines' element={<StyleGuide />} />
                     <Route path='components' element={<Components />} />
                 </Route>
             </Routes>

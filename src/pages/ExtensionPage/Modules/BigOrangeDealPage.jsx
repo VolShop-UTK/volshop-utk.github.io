@@ -58,6 +58,9 @@ function BigOrangeDealPage() {
                     Big Orange Deal (BOD) Module
                 </Heading>
                 <p>
+                    Stylesheet: <i>_volshopwebext_bod.scss</i>
+                </p>
+                <p>
                     The Big Orange Deal (BOD) module only contains the Big Orange Deal page. It has
                     four display types: Staged, Released, Sold Out, and No Deal. The page displayed
                     is determined by a redirect placed on the <code>/big-orange-deal</code> url. All
