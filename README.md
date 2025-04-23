@@ -13,3 +13,4 @@
 ### Building and Pushing to GitHub Pages
 
 1. Run `npm run build`
+1. Run `npm run deploy`
