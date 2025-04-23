@@ -72,7 +72,7 @@ function Submodule({ props }) {
                     <Heading level={6} id={`${props.name}-notes`}>
                         Notes
                     </Heading>
-                    <p>{props.notes}</p>
+                    <ReactMarkdown components={markdownComponents}>{props.notes}</ReactMarkdown>
                 </>
             ) : null}
         </div>

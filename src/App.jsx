@@ -7,6 +7,7 @@ import ExtensionPage from './pages/ExtensionPage/ExtensionPage.jsx';
 import AboutUsPage from './pages/ExtensionPage/Modules/aboutUsPage.jsx';
 import ExtensionLandingPage from './pages/ExtensionPage/Modules/ExtensionLandingPage.jsx';
 import Components from './pages/ExtensionPage/Style/Components.jsx';
+import BigOrangeDealPage from './pages/ExtensionPage/Modules/BigOrangeDealPage.jsx';
 
 function App() {
     document.querySelectorAll('h2, h3, h4, h5, h6').forEach(function (header) {
@@ -26,6 +27,7 @@ function App() {
                 <Route path='/extension' element={<ExtensionPage />}>
                     <Route index element={<ExtensionLandingPage />} />
                     <Route path='about-us' element={<AboutUsPage />} />
+                    <Route path='big-orange-deal' element={<BigOrangeDealPage />} />
                     <Route path='components' element={<Components />} />
                 </Route>
             </Routes>

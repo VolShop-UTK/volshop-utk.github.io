@@ -20,28 +20,6 @@ function SideNav() {
                             onClick={() => handleLinkClick('overview')}>
                             Overview
                         </Link>
-                        <ul>
-                            <li>
-                                <Link
-                                    to='/extension#extension-structure'
-                                    className={`sidebar-link ${
-                                        activeLink === 'structure' ? 'active' : ''
-                                    }`}
-                                    onClick={() => handleLinkClick('structure')}>
-                                    Structure
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
-                                    to='/extension#technology'
-                                    className={`sidebar-link ${
-                                        activeLink === 'technology' ? 'active' : ''
-                                    }`}
-                                    onClick={() => handleLinkClick('technology')}>
-                                    Technologies
-                                </Link>
-                            </li>
-                        </ul>
                     </li>
                     <li>
                         Modules
@@ -56,7 +34,16 @@ function SideNav() {
                                     About Us
                                 </Link>
                             </li>
-                            <li>Big Orange Deal</li>
+                            <li>
+                                <Link
+                                    to='/extension/big-orange-deal'
+                                    className={`sidebar-link ${
+                                        activeLink === 'bod' ? 'active' : ''
+                                    }`}
+                                    onClick={() => handleLinkClick('bod')}>
+                                    Big Orange Deal
+                                </Link>
+                            </li>
                             <li>Components</li>
                             <li>Controller</li>
                             <li>Customer Service Info</li>
