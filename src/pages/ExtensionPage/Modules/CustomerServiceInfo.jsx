@@ -41,6 +41,90 @@ function CustomerServiceInfo() {
             ],
             notes: 'This information is used in both the FAQs sub-module and the ShippingPolicy sub-module.',
         },
+        {
+            name: 'FAQs',
+            styleSheet: '_volshopwebext_faqs_content.scss',
+            description:
+                'The FAQs module shows all general FAQs customers might have when shopping with the VolShop.',
+            callout:
+                'This component uses the “Dropdown Section” global component style (see [Dropdown Section](/extension/components#dropdown))',
+            configFields: [
+                {
+                    name: 'FAQs',
+                    type: 'Array',
+                    varName: 'CustomerServiceInfo.FAQs',
+                    value: '',
+                    required: false,
+                    supportsHTML: true,
+                    parentField: '',
+                },
+                {
+                    name: 'Category',
+                    type: 'Select',
+                    varName: 'category',
+                    value: '["General Information", "Store Hours and Locations", "University Faculty & Staff", "Returns & Exchanges"]',
+                    required: true,
+                    supportsHTML: false,
+                    parentField: 'FAQs',
+                },
+                {
+                    name: 'Question',
+                    type: 'String',
+                    varName: 'question',
+                    value: '',
+                    required: false,
+                    supportsHTML: false,
+                    parentField: 'FAQs',
+                },
+                {
+                    name: 'Answer',
+                    type: 'String',
+                    varName: 'answer',
+                    value: '',
+                    required: false,
+                    supportsHTML: false,
+                    parentField: 'FAQs',
+                },
+            ],
+            notes: '- The Category field determines which section the FAQ goes under. \n - **Make sure to separate paragraphs in individual <p> tags. It will automatically space and format them. Similarly, the FAQs can handle ordered list, unordered lists, and tables without any additional CSS (see [Dropdown Section](/extension/components#dropdown)).**',
+        },
+        {
+            name: 'PaymentMethods',
+            styleSheet: '',
+            description: 'The PaymentMethods module controls the Payment Methods information page.',
+            callout:
+                'This component uses the "General Information Pages" global component style (see [General Information Pages](/extension/components#general-info-page))',
+            configFields: [],
+            notes: '',
+        },
+        {
+            name: 'ReturnPolicy',
+            styleSheet: '',
+            description: 'The ReturnPolicy module controls the Return Policy information page.',
+            callout:
+                'This component uses the "General Information Pages" global component style (see [General Information Pages](/extension/components#general-info-page))',
+            configFields: [],
+            notes: '',
+        },
+        {
+            name: 'ShippingPolicy',
+            styleSheet: '',
+            description: 'The ShippingPolicy module controls the Shipping Policy information page.',
+            callout:
+                'This component uses the "General Information Pages" global component style (see [General Information Pages](/extension/components#general-info-page))',
+            configFields: [
+                {
+                    name: 'In-Store Pickup Policy',
+                    type: 'String',
+                    varName: 'CustomerServiceInfo.InStorePickupPolicy',
+                    value: '',
+                    required: false,
+                    supportsHTML: true,
+                    parentField: '',
+                },
+            ],
+            notes: '',
+        },
     ];
 
     return (
