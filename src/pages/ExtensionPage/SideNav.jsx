@@ -74,7 +74,16 @@ function SideNav() {
                                     Customer Service Info
                                 </Link>
                             </li>
-                            <li>Footer</li>
+                            <li>
+                                <Link
+                                    to='/extension/modules/footer'
+                                    className={`sidebar-link ${
+                                        activeLink === 'footer' ? 'active' : ''
+                                    }`}
+                                    onClick={() => handleLinkClick('footer')}>
+                                    Footer
+                                </Link>
+                            </li>
                             <li>Home</li>
                             <li>Total Access</li>
                             <li>VolBooks</li>

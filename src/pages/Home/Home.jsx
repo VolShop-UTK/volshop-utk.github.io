@@ -25,7 +25,7 @@ const Home = () => {
                 <div className='home-card-grid'>
                     <HomeCard title='VolShop App' icon={app} path='/app' />
                     <HomeCard title='VolShop Extension' icon={extension} path='/extension' />
-                    <HomeCard title='VolShop Theme' icon={theme} path='/' />
+                    <HomeCard title='VolShop Theme' icon={theme} path='/theme' />
                     <HomeCard title='SuiteScripts' icon={script} path='/' />
                     <HomeCard title='Import Scripts' icon={code} path='/' />
                 </div>

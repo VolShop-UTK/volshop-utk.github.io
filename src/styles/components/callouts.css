@@ -1,0 +1,7 @@
+.calloutError {
+    padding: 2em;
+    background-color: var(--errorMessageBackground);
+    color: var(--error-text-color);
+    border: 2px solid var(--error-text-color);
+    border-radius: 10px;
+}
