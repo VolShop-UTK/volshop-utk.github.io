@@ -56,7 +56,7 @@ function Footer() {
         <>
             <div>
                 <Heading level={1} id='bod'>
-                    Footer <i>**Deprecated**</i>
+                    Footer Module <i>**Deprecated**</i>
                 </Heading>
                 <p>
                     Stylesheet: <i>_volshopwebext_bod.scss</i>
@@ -79,6 +79,13 @@ function Footer() {
                 </Heading>
 
                 <ConfigFields data={configFields} />
+            </div>
+
+            <div>
+                <Heading level={3} id={`notes`}>
+                    Notes
+                </Heading>
+                <p>The Show checkbox determines whether the icon is included in the footer.</p>
             </div>
         </>
     );

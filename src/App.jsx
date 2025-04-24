@@ -12,8 +12,9 @@ import BigOrangeDealPage from './pages/ExtensionPage/Modules/BigOrangeDealPage.j
 import Controller from './pages/ExtensionPage/Modules/Controller.jsx';
 import StyleGuide from './pages/ExtensionPage/Style/StyleGuide.jsx';
 import CustomerServiceInfo from './pages/ExtensionPage/Modules/CustomerServiceInfo.jsx';
-import Footer from './pages/ExtensionPage/Modules/footer.jsx';
 import ThemePage from './pages/ThemePage/ThemePage.jsx';
+import Footer from './pages/ExtensionPage/Modules/footer.jsx';
+import ModulesHome from './pages/ExtensionPage/Modules/ModulesHome.jsx';
 
 function App() {
     document.querySelectorAll('h2, h3, h4, h5, h6').forEach(function (header) {
@@ -36,8 +37,9 @@ function App() {
                     <Route path='modules/big-orange-deal' element={<BigOrangeDealPage />} />
                     <Route path='modules/components' element={<ModulesComponents />} />
                     <Route path='modules/controller' element={<Controller />} />
-                    <Route path='modules/footer' element={<Footer />} />
                     <Route path='modules/customer-service-info' element={<CustomerServiceInfo />} />
+                    <Route path='modules/footer' element={<Footer />} />
+                    <Route path='modules/home' element={<ModulesHome />} />
 
                     <Route path='style-guidelines' element={<StyleGuide />} />
                     <Route path='components' element={<Components />} />

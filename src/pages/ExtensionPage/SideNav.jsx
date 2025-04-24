@@ -84,7 +84,16 @@ function SideNav() {
                                     Footer
                                 </Link>
                             </li>
-                            <li>Home</li>
+                            <li>
+                                <Link
+                                    to='/extension/modules/home'
+                                    className={`sidebar-link ${
+                                        activeLink === 'home' ? 'active' : ''
+                                    }`}
+                                    onClick={() => handleLinkClick('home')}>
+                                    Home
+                                </Link>
+                            </li>
                             <li>Total Access</li>
                             <li>VolBooks</li>
                             <li>VolTech</li>
