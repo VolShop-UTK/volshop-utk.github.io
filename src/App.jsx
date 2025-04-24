@@ -13,8 +13,9 @@ import Controller from './pages/ExtensionPage/Modules/Controller.jsx';
 import StyleGuide from './pages/ExtensionPage/Style/StyleGuide.jsx';
 import CustomerServiceInfo from './pages/ExtensionPage/Modules/CustomerServiceInfo.jsx';
 import ThemePage from './pages/ThemePage/ThemePage.jsx';
-import Footer from './pages/ExtensionPage/Modules/footer.jsx';
+import Footer from './pages/ExtensionPage/Modules/Footer.jsx';
 import ModulesHome from './pages/ExtensionPage/Modules/ModulesHome.jsx';
+import TotalAccess from './pages/ExtensionPage/Modules/TotalAccess.jsx';
 
 function App() {
     document.querySelectorAll('h2, h3, h4, h5, h6').forEach(function (header) {
@@ -40,6 +41,7 @@ function App() {
                     <Route path='modules/customer-service-info' element={<CustomerServiceInfo />} />
                     <Route path='modules/footer' element={<Footer />} />
                     <Route path='modules/home' element={<ModulesHome />} />
+                    <Route path='modules/total-access' element={<TotalAccess />} />
 
                     <Route path='style-guidelines' element={<StyleGuide />} />
                     <Route path='components' element={<Components />} />
