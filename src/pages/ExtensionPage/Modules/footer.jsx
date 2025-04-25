@@ -62,7 +62,7 @@ function Footer() {
                     Stylesheet: <i>_volshopwebext_bod.scss</i>
                 </p>
 
-                <div className='calloutError' style={{ marginTop: '1em' }}>
+                <div className='callout error' style={{ marginTop: '1em' }}>
                     This module has been deprecated. Functionality has been replaced in the VolShop
                     Web Theme (see <Link to='/theme'>VolShop Theme</Link>)
                 </div>

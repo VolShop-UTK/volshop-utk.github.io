@@ -1,5 +1,6 @@
 .configField-table {
-    width: 90%;
+    width: 100%;
+    table-layout: auto;
     border-radius: 5px;
     border-collapse: collapse;
     margin: 1em 0 2em 0;
@@ -12,6 +13,16 @@
 .configField-table th,
 .configField-table td {
     padding: 5px 10px;
+}
+
+.configField-table td:nth-last-child(-n + 2),
+th:nth-last-child(-n + 2) {
+    text-align: center;
+}
+
+.configField-table td:nth-child(4),
+th:nth-child(4) {
+    padding-left: 2em;
 }
 
 .configField-table thead tr {
@@ -40,4 +51,9 @@
 
 .configField-table tbody tr:last-child td:last-child {
     border-bottom-right-radius: 5px;
+}
+
+.child-row td:first-child {
+    padding-left: 2rem;
+    font-style: italic; /* optional visual hint */
 }

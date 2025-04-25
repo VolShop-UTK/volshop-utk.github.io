@@ -4,51 +4,166 @@ import ConfigFields from '../../../components/configFields/ConfigFields';
 import { Link } from 'react-router';
 
 function TotalAccess() {
+    /*** @var {ConfigField} configFields */
     let configFields = [
         {
-            name: 'Big Orange Deal Title',
+            name: 'Header Title',
             type: 'String',
-            varName: 'BOD.title',
-            value: '',
-            required: false,
-            supportsHTML: false,
-            parentField: '',
+            varName: 'TotalAccess.Header.title',
         },
         {
-            name: 'Price',
+            name: 'Header Description',
             type: 'String',
-            varName: 'BOD.price',
-            value: '',
-            required: false,
-            supportsHTML: false,
-            parentField: '',
+            varName: 'TotalAccess.Header.description',
         },
         {
-            name: 'Link to Item Page',
+            name: 'Header Image Path',
             type: 'String',
-            varName: 'BOD.link',
-            value: '',
-            required: false,
-            supportsHTML: false,
-            parentField: '',
+            varName: 'TotalAccess.Header.imagePath',
         },
         {
-            name: 'Path to Image',
+            name: 'Header Image Alt Tag',
             type: 'String',
-            varName: 'BOD.imageLink',
-            value: '',
-            required: false,
-            supportsHTML: false,
-            parentField: '',
+            varName: 'TotalAccess.Header.imageAltTag',
         },
         {
-            name: 'Description',
-            type: 'String',
-            varName: 'BOD.description',
-            value: '',
-            required: false,
+            name: 'Testimonials',
+            type: 'Array',
+            varName: 'TotalAccess.testimonials',
             supportsHTML: true,
-            parentField: '',
+            children: [
+                {
+                    name: 'Name',
+                    type: 'String',
+                    varName: 'name',
+                },
+                {
+                    name: 'Category',
+                    type: 'Select',
+                    varName: 'category',
+                    value: '["Student", "Faculty"]',
+                },
+                {
+                    name: 'Testimonial',
+                    type: 'String',
+                    varName: 'testimonial',
+                    supportsHTML: true,
+                },
+                {
+                    name: 'Image',
+                    type: 'String',
+                    varName: 'image',
+                },
+            ],
+        },
+        {
+            name: 'FAQs',
+            type: 'Array',
+            varName: 'TotalAccess.FAQs',
+            supportsHTML: true,
+            children: [
+                {
+                    name: 'Category',
+                    type: 'Select',
+                    varName: 'category',
+                    value: '[”General Information”, “Student FAQs”, “Faculty FAQs”]',
+                },
+                {
+                    name: 'Question',
+                    type: 'String',
+                    varName: 'question',
+                },
+                {
+                    name: 'Answer',
+                    type: 'String',
+                    varName: 'answer',
+                    supportsHTML: true,
+                },
+            ],
+        },
+        {
+            name: 'Total Access Stats',
+            type: 'Array',
+            varName: 'TotalAccess.TAStats',
+            children: [
+                {
+                    name: 'Term',
+                    type: 'String',
+                    varName: 'term',
+                },
+                {
+                    name: 'Number of Items',
+                    type: 'String',
+                    varName: 'numItems',
+                },
+                {
+                    name: 'Enrollments',
+                    type: 'String',
+                    varName: 'enrollments',
+                },
+                {
+                    name: 'Enrollments',
+                    type: 'String',
+                    varName: 'enrollments',
+                },
+                {
+                    name: 'Participation Rate',
+                    type: 'String',
+                    varName: 'participationRate',
+                },
+                {
+                    name: 'Opt Out Rate',
+                    type: 'String',
+                    varName: 'optOutRate',
+                },
+                {
+                    name: 'Student Savings',
+                    type: 'String',
+                    varName: 'studentSavings',
+                },
+            ],
+        },
+        {
+            name: 'Inclusive Access Stats',
+            type: 'Array',
+            varName: 'TotalAccess.IAStats',
+            children: [
+                {
+                    name: 'Term',
+                    type: 'String',
+                    varName: 'term',
+                },
+                {
+                    name: 'Number of Items',
+                    type: 'String',
+                    varName: 'numItems',
+                },
+                {
+                    name: 'Enrollments',
+                    type: 'String',
+                    varName: 'enrollments',
+                },
+                {
+                    name: 'Enrollments',
+                    type: 'String',
+                    varName: 'enrollments',
+                },
+                {
+                    name: 'Participation Rate',
+                    type: 'String',
+                    varName: 'participationRate',
+                },
+                {
+                    name: 'Opt Out Rate',
+                    type: 'String',
+                    varName: 'optOutRate',
+                },
+                {
+                    name: 'Student Savings',
+                    type: 'String',
+                    varName: 'studentSavings',
+                },
+            ],
         },
     ];
 
@@ -67,7 +182,7 @@ function TotalAccess() {
                     description of what Total Access is and a list of FAQs.
                 </p>
 
-                <div className='callout error'>
+                <div className='callout'>
                     This component uses the "General Information Pages" and “Dropdown Section”
                     global component styles (see{' '}
                     <Link to='/extension/components#dropdown'>General Information Pages</Link> and{' '}
@@ -87,7 +202,17 @@ function TotalAccess() {
                 <Heading level={3} id={`notes`}>
                     Notes
                 </Heading>
-                <p>The Show checkbox determines whether the icon is included in the TotalAccess.</p>
+                <ul>
+                    <li>The Category field determines which section the FAQ goes under.</li>
+                    <li>
+                        <b>
+                            Make sure to separate paragraphs in individual {'<p>'} tags. It will
+                            automatically space and format them. Similarly, the FAQs can handle
+                            ordered list, unordered lists, and tables without any additional CSS
+                            (see <Link to='/extension/components#dropdown'>Dropdown Section</Link>).
+                        </b>
+                    </li>
+                </ul>
             </div>
         </>
     );
