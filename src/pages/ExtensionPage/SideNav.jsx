@@ -104,7 +104,16 @@ function SideNav() {
                                     Total Access
                                 </Link>
                             </li>
-                            <li>VolBooks</li>
+                            <li>
+                                <Link
+                                    to='/extension/modules/volbooks'
+                                    className={`sidebar-link ${
+                                        activeLink === 'volbooks' ? 'active' : ''
+                                    }`}
+                                    onClick={() => handleLinkClick('volbooks')}>
+                                    VolBooks
+                                </Link>
+                            </li>
                             <li>VolTech</li>
                         </ul>
                     </li>
