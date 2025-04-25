@@ -13,6 +13,7 @@
 .configField-table th,
 .configField-table td {
     padding: 5px 10px;
+    vertical-align: top;
 }
 
 .configField-table td:nth-last-child(-n + 2),
