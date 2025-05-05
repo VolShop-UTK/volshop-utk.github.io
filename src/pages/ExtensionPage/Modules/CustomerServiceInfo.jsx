@@ -8,7 +8,7 @@ function CustomerServiceInfo() {
             name: 'Entry',
             styleSheet: '_volshopwebext_customerServiceInfo.scss',
             description:
-                'The Entry Module passes all sub-modules to the main Controller module. It also holds the configuration file for all sub-modules and the module sass entry point file which is also passed to the main sass file in the Controller module. The model file for the module is also held here.\n\n **Shipping Rates Component** \n\n This component contains all order price ranges and their associated shipping cost. The following configuration fields are used in the Customer Service Information component.',
+                'The Entry module passes all sub-modules to the main Entry module. It also holds the configuration file for all sub-modules and the module sass entry point file which is also passed to the main sass file in the Entry module. The model file for the module is also held here.\n\n **Shipping Rates Component** \n\n This component contains all order price ranges and their associated shipping cost. The following configuration fields are used in the Customer Service Information component.',
             callout: '',
             configFields: [
                 {

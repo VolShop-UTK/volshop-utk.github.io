@@ -92,8 +92,8 @@ function InclusiveAccess() {
                     graph showing participation rate. If the information needed for either graph is
                     missing, a graph displaying enrollment data will be shown instead of the missing
                     graph. If no stats are given, the stats section will automatically hide. See{' '}
-                    <Link to='/extension/style-guide/#stat-graphs'>Stat Graphs</Link> for more
-                    details.
+                    <Link to='/extension/style-guide/components#stat-graphs'>Stat Graphs</Link> for
+                    more details.
                 </p>
             </div>
         </>

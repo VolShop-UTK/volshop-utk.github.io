@@ -14,3 +14,13 @@
         color: var(--error-text-color) !important;
     }
 }
+
+.callout.warning {
+    background-color: var(--warningMessageBackground);
+    color: var(--warning-text-color) !important;
+    border: 2px solid var(--warning-text-color);
+
+    p {
+        color: var(--warning-text-color) !important;
+    }
+}

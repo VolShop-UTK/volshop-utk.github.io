@@ -38,7 +38,6 @@
 
 .doc-heading {
     position: relative;
-    /* no padding-left needed, keeps text aligned */
 }
 
 .anchor-link {

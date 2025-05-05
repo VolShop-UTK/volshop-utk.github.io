@@ -1,13 +1,9 @@
 import React, { useState } from 'react';
 import '../../styles/components/sidenav.css';
-import { Link } from 'react-router';
+import { Link, useLocation } from 'react-router';
 
 function SideNav() {
-    const [activeLink, setActiveLink] = useState('overview');
-
-    const handleLinkClick = (linkId) => {
-        setActiveLink(linkId);
-    };
+    const location = useLocation();
 
     return (
         <aside className='sidenav'>
@@ -16,8 +12,9 @@ function SideNav() {
                     <li>
                         <Link
                             to='/extension'
-                            className={`sidebar-link ${activeLink === 'overview' ? 'active' : ''}`}
-                            onClick={() => handleLinkClick('overview')}>
+                            className={`sidebar-link ${
+                                location.pathname === '/extension' ? 'active' : ''
+                            }`}>
                             Overview
                         </Link>
                     </li>
@@ -28,9 +25,10 @@ function SideNav() {
                                 <Link
                                     to='/extension/modules/about-us'
                                     className={`sidebar-link ${
-                                        activeLink === 'aboutUs' ? 'active' : ''
-                                    }`}
-                                    onClick={() => handleLinkClick('aboutUs')}>
+                                        location.pathname === '/extension/modules/about-us'
+                                            ? 'active'
+                                            : ''
+                                    }`}>
                                     About Us
                                 </Link>
                             </li>
@@ -38,9 +36,10 @@ function SideNav() {
                                 <Link
                                     to='/extension/modules/big-orange-deal'
                                     className={`sidebar-link ${
-                                        activeLink === 'bod' ? 'active' : ''
-                                    }`}
-                                    onClick={() => handleLinkClick('bod')}>
+                                        location.pathname === '/extension/modules/big-orange-deal'
+                                            ? 'active'
+                                            : ''
+                                    }`}>
                                     Big Orange Deal
                                 </Link>
                             </li>
@@ -48,29 +47,33 @@ function SideNav() {
                                 <Link
                                     to='/extension/modules/components'
                                     className={`sidebar-link ${
-                                        activeLink === 'component' ? 'active' : ''
-                                    }`}
-                                    onClick={() => handleLinkClick('component')}>
+                                        location.pathname === '/extension/modules/components'
+                                            ? 'active'
+                                            : ''
+                                    }`}>
                                     Components
                                 </Link>
                             </li>
                             <li>
                                 <Link
-                                    to='/extension/modules/controller'
+                                    to='/extension/modules/entry'
                                     className={`sidebar-link ${
-                                        activeLink === 'controller' ? 'active' : ''
-                                    }`}
-                                    onClick={() => handleLinkClick('controller')}>
-                                    Controller
+                                        location.pathname === '/extension/modules/entry'
+                                            ? 'active'
+                                            : ''
+                                    }`}>
+                                    Entry
                                 </Link>
                             </li>
                             <li>
                                 <Link
                                     to='/extension/modules/customer-service-info'
                                     className={`sidebar-link ${
-                                        activeLink === 'customer-service' ? 'active' : ''
-                                    }`}
-                                    onClick={() => handleLinkClick('customer-service')}>
+                                        location.pathname ===
+                                        '/extension/modules/customer-service-info'
+                                            ? 'active'
+                                            : ''
+                                    }`}>
                                     Customer Service Info
                                 </Link>
                             </li>
@@ -78,9 +81,10 @@ function SideNav() {
                                 <Link
                                     to='/extension/modules/footer'
                                     className={`sidebar-link ${
-                                        activeLink === 'footer' ? 'active' : ''
-                                    }`}
-                                    onClick={() => handleLinkClick('footer')}>
+                                        location.pathname === '/extension/modules/footer'
+                                            ? 'active'
+                                            : ''
+                                    }`}>
                                     Footer
                                 </Link>
                             </li>
@@ -88,9 +92,10 @@ function SideNav() {
                                 <Link
                                     to='/extension/modules/home'
                                     className={`sidebar-link ${
-                                        activeLink === 'home' ? 'active' : ''
-                                    }`}
-                                    onClick={() => handleLinkClick('home')}>
+                                        location.pathname === '/extension/modules/home'
+                                            ? 'active'
+                                            : ''
+                                    }`}>
                                     Home
                                 </Link>
                             </li>
@@ -98,9 +103,10 @@ function SideNav() {
                                 <Link
                                     to='/extension/modules/volbooks'
                                     className={`sidebar-link ${
-                                        activeLink === 'volbooks' ? 'active' : ''
-                                    }`}
-                                    onClick={() => handleLinkClick('volbooks')}>
+                                        location.pathname === '/extension/modules/volbooks'
+                                            ? 'active'
+                                            : ''
+                                    }`}>
                                     VolBooks
                                 </Link>
 
@@ -109,9 +115,11 @@ function SideNav() {
                                         <Link
                                             to='/extension/modules/volbooks/inclusive-access'
                                             className={`sidebar-link ${
-                                                activeLink === 'inclusive-access' ? 'active' : ''
-                                            }`}
-                                            onClick={() => handleLinkClick('inclusive-access')}>
+                                                location.pathname ===
+                                                '/extension/modules/volbooks/inclusive-access'
+                                                    ? 'active'
+                                                    : ''
+                                            }`}>
                                             Inclusive Access
                                         </Link>
                                     </li>
@@ -119,9 +127,11 @@ function SideNav() {
                                         <Link
                                             to='/extension/modules/volbooks/total-access'
                                             className={`sidebar-link ${
-                                                activeLink === 'total-access' ? 'active' : ''
-                                            }`}
-                                            onClick={() => handleLinkClick('total-access')}>
+                                                location.pathname ===
+                                                '/extension/modules/volbooks/total-access'
+                                                    ? 'active'
+                                                    : ''
+                                            }`}>
                                             Total Access
                                         </Link>
                                     </li>
@@ -131,9 +141,10 @@ function SideNav() {
                                 <Link
                                     to='/extension/modules/voltech'
                                     className={`sidebar-link ${
-                                        activeLink === 'voltech' ? 'active' : ''
-                                    }`}
-                                    onClick={() => handleLinkClick('voltech')}>
+                                        location.pathname === '/extension/modules/voltech'
+                                            ? 'active'
+                                            : ''
+                                    }`}>
                                     VolTech
                                 </Link>
                             </li>
@@ -146,9 +157,10 @@ function SideNav() {
                                 <Link
                                     to='/extension/style-guide/overview'
                                     className={`sidebar-link ${
-                                        activeLink === 'style-guide' ? 'active' : ''
-                                    }`}
-                                    onClick={() => handleLinkClick('style-guide')}>
+                                        location.pathname === '/extension/style-guide/overview'
+                                            ? 'active'
+                                            : ''
+                                    }`}>
                                     Overview
                                 </Link>
                             </li>
@@ -156,9 +168,10 @@ function SideNav() {
                                 <Link
                                     to='/extension/style-guide/components'
                                     className={`sidebar-link ${
-                                        activeLink === 'style-components' ? 'active' : ''
-                                    }`}
-                                    onClick={() => handleLinkClick('style-components')}>
+                                        location.pathname === '/extension/style-guide/components'
+                                            ? 'active'
+                                            : ''
+                                    }`}>
                                     Components
                                 </Link>
                             </li>

@@ -1,23 +1,22 @@
 import React from 'react';
-import Submodule from '../../../components/submodule/Submodule';
 import Heading from '../../../components/Heading';
 import ConfigFields from '../../../components/configFields/ConfigFields';
 import { Link } from 'react-router';
 
-function Controller() {
+function Entry() {
     let configFields = [];
 
     return (
         <>
             <div>
                 <Heading level={1} id='aboutus'>
-                    Controller Module
+                    Entry Module
                 </Heading>
                 <p>
                     Stylesheet: <i>_volshopwebext_main.scss</i>
                 </p>
                 <p>
-                    The Controller module is the main entry point for the extension. All modules are
+                    The Entry module is the main entry point for the extension. All modules are
                     directed and called within this module’s entry file. All general styling,
                     variables, and styled components can also be found in this module (See{' '}
                     <Link to='/extension/style-guide/overview'>Style Guidelines</Link> for more). In
@@ -38,4 +37,4 @@ function Controller() {
     );
 }
 
-export default Controller;
+export default Entry;

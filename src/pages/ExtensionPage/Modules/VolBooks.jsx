@@ -19,7 +19,7 @@ function VolBooks() {
             name: 'Entry',
             styleSheet: '_volshopwebext_customerServiceInfo.scss',
             description:
-                'The Entry Module passes all sub-modules to the main Controller module. It also holds the configuration file for all sub-modules and the module sass entry point file which is also passed to the main sass file in the Controller module. The model file for the module is also held here.',
+                'The Entry module passes all sub-modules to the main Entry module. It also holds the configuration file for all sub-modules and the module sass entry point file which is also passed to the main sass file in the Entry module. The model file for the module is also held here.',
             callout: '',
             configFields: [],
             notes: '',
