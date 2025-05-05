@@ -1,5 +1,5 @@
 import React from 'react';
-import moduleDiagram from '../../../assets/diagrams/extension/modules-diagram.png';
+import moduleDiagram from '../../../assets/diagrams/modules-diagram.png';
 import Heading from '../../../components/Heading';
 
 function ExtensionLandingPage() {
@@ -107,6 +107,9 @@ function ExtensionLandingPage() {
                                 <code>SuiteScript</code>
                             </li>
                             <li>
+                                <code>HTML</code>
+                            </li>
+                            <li>
                                 <code>Sass</code>
                             </li>
                         </ul>
@@ -127,6 +130,16 @@ function ExtensionLandingPage() {
                             <li>
                                 <a href='https://underscorejs.org/'>
                                     <code>Underscore.js</code>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h6>Libraries</h6>
+                        <ul>
+                            <li>
+                                <a href='https://chartjs.org/'>
+                                    <code>Chart.js</code>
                                 </a>
                             </li>
                         </ul>

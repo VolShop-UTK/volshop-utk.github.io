@@ -1,7 +1,7 @@
 .extension-technologies {
     display: flex;
     flex-direction: row;
-    width: 30%;
+    width: 50%;
 }
 
 .extension-technologies div {

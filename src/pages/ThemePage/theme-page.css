@@ -1,0 +1,7 @@
+.theme-content {
+    margin-left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 4em 15vw;
+}

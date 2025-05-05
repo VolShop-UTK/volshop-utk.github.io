@@ -18,7 +18,7 @@ function Navbar() {
                     <Link to='/extension' className='navbar-link'>
                         Extension
                     </Link>
-                    <a href='https://github.com/VolShop-UTK' className='navbar-link'>
+                    <a href='/theme' className='navbar-link'>
                         Theme
                     </a>
                     <a href='https://github.com/VolShop-UTK' className='navbar-link'>

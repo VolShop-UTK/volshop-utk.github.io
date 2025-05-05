@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '../../components/navbar/navbar';
 import './app-page.css';
 import AppSideNav from './SideNav';
+import { Outlet } from 'react-router';
 
 function AppPage() {
     return (
@@ -11,7 +12,7 @@ function AppPage() {
                 <AppSideNav />
                 <div className='content-wrapper'>
                     <div className='content app-content'>
-                        <h1>VolShop App</h1>
+                        <Outlet />
                     </div>
                 </div>
             </div>

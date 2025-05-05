@@ -19,6 +19,7 @@ import VolTech from './pages/ExtensionPage/Modules/VolTech.jsx';
 import InclusiveAccess from './pages/ExtensionPage/Modules/InclusiveAccess.jsx';
 import StyleOverview from './pages/ExtensionPage/Style/StyleOverview.jsx';
 import Entry from './pages/ExtensionPage/Modules/Entry.jsx';
+import AppLandingPage from './pages/AppPage/Modules/AppLandingPage.jsx';
 
 function App() {
     document.querySelectorAll('h2, h3, h4, h5, h6').forEach(function (header) {
@@ -34,7 +35,9 @@ function App() {
         <Router>
             <Routes>
                 <Route path='/' element={<Home />} />
-                <Route path='/app' element={<AppPage />} />
+                <Route path='/app' element={<AppPage />}>
+                    <Route index element={<AppLandingPage />} />
+                </Route>
                 <Route path='/extension' element={<ExtensionPage />}>
                     <Route index element={<ExtensionLandingPage />} />
                     <Route path='modules/about-us' element={<AboutUsPage />} />
@@ -56,9 +59,7 @@ function App() {
                     <Route path='style-guide/overview' element={<StyleOverview />} />
                     <Route path='style-guide/components' element={<Components />} />
                 </Route>
-                <Route path='/theme' element={<ThemePage />}>
-                    {/* <Route index element={<ExtensionLandingPage />} /> */}
-                </Route>
+                <Route path='/theme' element={<ThemePage />} />
             </Routes>
         </Router>
     );

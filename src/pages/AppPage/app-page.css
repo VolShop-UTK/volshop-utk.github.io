@@ -1,1 +1,10 @@
+.app-technologies {
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+}
 
+.app-technologies div {
+    margin: 0;
+    flex: 1;
+}
