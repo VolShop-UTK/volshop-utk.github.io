@@ -37,7 +37,7 @@ function CustomerServiceInfo() {
             description:
                 'The FAQs module shows all general FAQs customers might have when shopping with the VolShop.',
             callout:
-                'This component uses the “Dropdown Section” global component style (see [Dropdown Section](/extension/components#dropdown))',
+                'This component uses the “Dropdown Section” global component style (see [Dropdown Section](/extension/style-guide/components#dropdown))',
             configFields: [
                 {
                     name: 'FAQs',
@@ -65,14 +65,14 @@ function CustomerServiceInfo() {
                     ],
                 },
             ],
-            notes: '- The Category field determines which section the FAQ goes under. \n - **Make sure to separate paragraphs in individual <p> tags. It will automatically space and format them. Similarly, the FAQs can handle ordered list, unordered lists, and tables without any additional CSS (see [Dropdown Section](/extension/components#dropdown)).**',
+            notes: '- The Category field determines which section the FAQ goes under. \n - **Make sure to separate paragraphs in individual <p> tags. It will automatically space and format them. Similarly, the FAQs can handle ordered list, unordered lists, and tables without any additional CSS (see [Dropdown Section](/extension/style-guide/style-guide/components#dropdown)).**',
         },
         {
             name: 'PaymentMethods',
             styleSheet: '',
             description: 'The PaymentMethods module controls the Payment Methods information page.',
             callout:
-                'This component uses the "General Information Pages" global component style (see [General Information Pages](/extension/components#general-info-page))',
+                'This component uses the "General Information Pages" global component style (see [General Information Pages](/extension/style-guide/components#general-info-page))',
             configFields: [],
             notes: '',
         },
@@ -81,7 +81,7 @@ function CustomerServiceInfo() {
             styleSheet: '',
             description: 'The ReturnPolicy module controls the Return Policy information page.',
             callout:
-                'This component uses the "General Information Pages" global component style (see [General Information Pages](/extension/components#general-info-page))',
+                'This component uses the "General Information Pages" global component style (see [General Information Pages](/extension/style-guide/components#general-info-page))',
             configFields: [],
             notes: '',
         },
@@ -90,7 +90,7 @@ function CustomerServiceInfo() {
             styleSheet: '',
             description: 'The ShippingPolicy module controls the Shipping Policy information page.',
             callout:
-                'This component uses the "General Information Pages" global component style (see [General Information Pages](/extension/components#general-info-page))',
+                'This component uses the "General Information Pages" global component style (see [General Information Pages](/extension/style-guide/components#general-info-page))',
             configFields: [
                 {
                     name: 'In-Store Pickup Policy',

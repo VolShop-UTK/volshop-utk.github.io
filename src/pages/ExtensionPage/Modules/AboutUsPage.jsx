@@ -25,18 +25,23 @@ function AboutUsPage() {
                     name: 'Employment',
                     type: 'Array',
                     varName: 'AbouytUs.Employment',
-                    required: true,
                     children: [
                         {
                             name: 'Category',
                             type: 'Select',
                             varName: 'category',
-                            value: '["Full Time", "Temp", "Student"]',
+                            value: '["Administrative", "Student Union", "Distribution", "Events", "Commons/Cumberland", "Student"]',
+                            required: true,
                         },
                         {
                             name: 'Job Title',
                             type: 'String',
                             varName: 'jobTitle',
+                        },
+                        {
+                            name: 'Description',
+                            type: 'String',
+                            varName: 'description',
                         },
                         {
                             name: 'Application Link',
@@ -81,7 +86,7 @@ function AboutUsPage() {
             description:
                 'The Navbar module initializes the sub-navbar component seen on the About Us Home Page, History page, and 10 Keys of Success page. By creating its own component, changes will be reflected on all pages instead of maintaining them individually.',
             callout:
-                'This component uses the "Subnavbar" global component style (see [Sub-Navbar](/extension/components#sub-navbar))',
+                'This component uses the "Subnavbar" global component style (see [Sub-Navbar](/extension/style-guide/components#sub-navbar))',
             configFields: [],
             notes: '',
         },
@@ -128,8 +133,7 @@ function AboutUsPage() {
             name: 'StoreHours',
             styleSheet: '_volshopwebext_aboutUs_storeHours.scss',
             description: 'Displays all locations and their store hours.',
-            callout:
-                'This component uses the "Subnavbar" global component style (see [Sub-Navbar](/extension/components#sub-navbar))',
+            callout: '',
             configFields: [
                 {
                     name: 'Store Hours',

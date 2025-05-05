@@ -45,7 +45,7 @@ const Type = ({ value }) => {
             );
         default:
             return (
-                <span style={{ padding: '5px', borderRadius: '5px', backgroundColor: '#784722' }}>
+                <span style={{ padding: '5px', borderRadius: '5px', backgroundColor: '#0B0F14' }}>
                     {value}
                 </span>
             );

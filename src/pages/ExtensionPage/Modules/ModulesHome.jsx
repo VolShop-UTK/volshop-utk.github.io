@@ -20,7 +20,7 @@ function ModulesHome() {
             description:
                 'Displays cards for the other three departments (VolBooks, VolTech, and VolSnacks).',
             callout:
-                'This component uses the "Three Card Layout" global component style (see [Three Card Layout](/extension/components#three-card-layout))',
+                'This component uses the "Three Card Layout" global component style (see [Three Card Layout](/extension/style-guide/components#three-card-layout))',
             configFields: [
                 {
                     name: 'Department - show',
@@ -72,7 +72,7 @@ function ModulesHome() {
             description:
                 'The Fan Favorites section is an item carousel of select items to appear in the section. Items added to the “Fan Favorites” commerce category will be added to this carousel.',
             callout:
-                'This component uses the "Item Carousel" global component style (see [Item Carousel](/extension/components#item-carousel))',
+                'This component uses the "Item Carousel" global component style (see [Item Carousel](/extension/style-guide/components#item-carousel))',
             configFields: [],
             notes: 'It is recommended to have **at least 5 items** in the home goods carousel as a typical-size computer screen can show 5 items at a time.',
         },
@@ -82,7 +82,7 @@ function ModulesHome() {
             description:
                 'The Featured Categories component controls a three card layout featuring a different category in each. Below the main featured categories, there are subcategories featured as circle icons. When the screen is resized smaller, the circles are able to be scrolled horizontally.',
             callout:
-                'This component uses the "Three Card Layout" global component style (see [Three Card Layout](/extension/components#three-card-layout))',
+                'This component uses the "Three Card Layout" global component style (see [Three Card Layout](/extension/style-guide/components#three-card-layout))',
             configFields: [
                 {
                     name: 'Featured Categories - Show',
@@ -161,7 +161,7 @@ function ModulesHome() {
             description:
                 'The Home Goods component controls a the main Home Goods banner as well as the home goods item carousel below it.',
             callout:
-                'This component uses the "Item Carousel" global component style (see [Item Carousel](/extension/components#item-carousel))',
+                'This component uses the "Item Carousel" global component style (see [Item Carousel](/extension/style-guide/components#item-carousel))',
             configFields: [
                 {
                     name: 'Home Goods - Show',

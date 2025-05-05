@@ -96,16 +96,6 @@ function SideNav() {
                             </li>
                             <li>
                                 <Link
-                                    to='/extension/modules/total-access'
-                                    className={`sidebar-link ${
-                                        activeLink === 'total-access' ? 'active' : ''
-                                    }`}
-                                    onClick={() => handleLinkClick('total-access')}>
-                                    Total Access
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
                                     to='/extension/modules/volbooks'
                                     className={`sidebar-link ${
                                         activeLink === 'volbooks' ? 'active' : ''
@@ -113,6 +103,29 @@ function SideNav() {
                                     onClick={() => handleLinkClick('volbooks')}>
                                     VolBooks
                                 </Link>
+
+                                <ul>
+                                    <li>
+                                        <Link
+                                            to='/extension/modules/volbooks/inclusive-access'
+                                            className={`sidebar-link ${
+                                                activeLink === 'inclusive-access' ? 'active' : ''
+                                            }`}
+                                            onClick={() => handleLinkClick('inclusive-access')}>
+                                            Inclusive Access
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link
+                                            to='/extension/modules/volbooks/total-access'
+                                            className={`sidebar-link ${
+                                                activeLink === 'total-access' ? 'active' : ''
+                                            }`}
+                                            onClick={() => handleLinkClick('total-access')}>
+                                            Total Access
+                                        </Link>
+                                    </li>
+                                </ul>
                             </li>
                             <li>
                                 <Link
@@ -126,7 +139,31 @@ function SideNav() {
                             </li>
                         </ul>
                     </li>
-                    <li>Style Guide</li>
+                    <li>
+                        Style Guide
+                        <ul>
+                            <li>
+                                <Link
+                                    to='/extension/style-guide/overview'
+                                    className={`sidebar-link ${
+                                        activeLink === 'style-guide' ? 'active' : ''
+                                    }`}
+                                    onClick={() => handleLinkClick('style-guide')}>
+                                    Overview
+                                </Link>
+                            </li>
+                            <li>
+                                <Link
+                                    to='/extension/style-guide/components'
+                                    className={`sidebar-link ${
+                                        activeLink === 'style-components' ? 'active' : ''
+                                    }`}
+                                    onClick={() => handleLinkClick('style-components')}>
+                                    Components
+                                </Link>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
         </aside>

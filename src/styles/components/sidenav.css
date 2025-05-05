@@ -1,10 +1,14 @@
+:root {
+    --sidebar-width: 18%;
+}
+
 .sidenav {
     position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
     z-index: 800;
-    width: 15%;
+    width: var(--sidebar-width);
     max-width: 300px;
     padding-left: 3em;
 
@@ -20,7 +24,8 @@
     margin-top: 100px;
 }
 
-.sidenav nav ul li {
+.sidenav nav ul li,
+.sidenav nav ul li ul li {
     list-style-type: none;
     margin: 0.25em;
     padding: 0.5em 0;
@@ -29,7 +34,13 @@
 
 .sidenav nav ul li ul li {
     margin-left: 1em;
-    font-weight: normal;
+    link {
+        font-weight: normal;
+    }
+}
+
+.sidenav nav ul li ul li ul li {
+    margin-left: 2em;
 }
 
 .sidebar-link {

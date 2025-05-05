@@ -7,6 +7,10 @@
 
 .callout.error {
     background-color: var(--errorMessageBackground);
-    color: var(--error-text-color);
+    color: var(--error-text-color) !important;
     border: 2px solid var(--error-text-color);
+
+    p {
+        color: var(--error-text-color) !important;
+    }
 }

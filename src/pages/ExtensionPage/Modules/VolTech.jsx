@@ -10,7 +10,7 @@ function VolTech() {
             description:
                 'The VolTechHome module controls the homepage for VolTech. Each section of the page is split into it’s own component.',
             callout:
-                'This component uses the “Dropdown Section” global component style (see [Dropdown Section](/extension/components#dropdown))',
+                'This component uses the “Dropdown Section” global component style (see [Dropdown Section](/extension/style-guide/components#dropdown))',
             configFields: [
                 {
                     name: 'Show Welcome Banner',
@@ -50,7 +50,7 @@ function VolTech() {
                     ],
                 },
             ],
-            notes: '- Each of the "Show" check-boxes determines whether the section or component is shown on the homepage.\n- The Device/Software Service field in the Technology Service Center Array determines what pricing table the item goes into\n- **Make sure to separate paragraphs in individual <p> tags. It will automatically space and format them. Similarly, the FAQs can handle ordered list, unordered lists, and tables without any additional CSS (see [Dropdown Section](/extension/components#dropdown)).**',
+            notes: '- Each of the "Show" check-boxes determines whether the section or component is shown on the homepage.\n- The Device/Software Service field in the Technology Service Center Array determines what pricing table the item goes into\n- **Make sure to separate paragraphs in individual <p> tags. It will automatically space and format them. Similarly, the FAQs can handle ordered list, unordered lists, and tables without any additional CSS (see [Dropdown Section](/extension/style-guide/components#dropdown)).**',
         },
     ];
 

@@ -19,7 +19,10 @@ import './submodule.css';
 /**
  * @typedef SubModule
  * @property {String} name
- * @property {String} description
+ * @property {String} styleSheet
+ * @property {String?} description
+ * @property {String} depracted
+ * @property {String | {content: String, level: String}} callout
  * @property {ConfigField[]} configFields
  * @property {String} notes
  */
@@ -46,30 +49,50 @@ function Submodule({ props }) {
     return (
         <div>
             <Heading level={4} id={props.name}>
-                {props.name}
+                {props.name} {props.deprecated && props.deprecated != '' && <i> **Deprecated**</i>}
             </Heading>
             {props.styleSheet != '' ? (
                 <p>
                     Style Sheet: <i>{props.styleSheet}</i>
                 </p>
             ) : null}
-            {props.description != '' ? (
-                <ReactMarkdown components={markdownComponents}>{props.description}</ReactMarkdown>
-            ) : null}
 
-            {props.callout != '' ? (
-                <div className='callout'>
-                    <ReactMarkdown components={markdownComponents}>{props.callout}</ReactMarkdown>
+            {props.deprecated && props.deprecated != '' ? (
+                <div className='callout error'>
+                    <ReactMarkdown components={markdownComponents}>
+                        {props.deprecated}
+                    </ReactMarkdown>
                 </div>
             ) : null}
 
+            {props.description != '' ? (
+                <ReactMarkdown components={markdownComponents}>{props.description}</ReactMarkdown>
+            ) : null}
+            {typeof props.callout == 'string' ? (
+                props.callout != '' ? (
+                    <div className='callout'>
+                        <ReactMarkdown components={markdownComponents}>
+                            {props.callout}
+                        </ReactMarkdown>
+                    </div>
+                ) : null
+            ) : typeof props.callout == 'object' ? (
+                props.callout.content && props.callout.content != '' ? (
+                    <div
+                        className={`callout ${
+                            props.callout.level && props.callout.level == 'error' ? 'error' : ''
+                        }`}>
+                        <ReactMarkdown components={markdownComponents}>
+                            {props.callout.content}
+                        </ReactMarkdown>
+                    </div>
+                ) : null
+            ) : null}
             <div style={{ height: '1em', margin: '0' }}></div>
             <Heading level={6} id={`${props.name}-config-fields`}>
                 Configurable Fields
             </Heading>
-
             <ConfigFields data={props.configFields} />
-
             {props.notes != '' ? (
                 <>
                     <Heading level={6} id={`${props.name}-notes`}>

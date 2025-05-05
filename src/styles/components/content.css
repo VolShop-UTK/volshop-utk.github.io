@@ -1,7 +1,7 @@
 .content {
     max-width: calc(2000px - 12em);
     width: 100%;
-    margin-left: clamp(0px, calc(15% + 3em), calc(300px + 3em));
+    margin-left: clamp(0px, calc(var(--sidebar-width) + 3em), calc(300px + 3em));
     padding: 2em 6em;
 }
 
@@ -20,6 +20,10 @@
 
 .content div {
     margin: 3em 0;
+}
+
+.content div.sc-fYsHOw {
+    margin: 0;
 }
 
 .content div:first-child {

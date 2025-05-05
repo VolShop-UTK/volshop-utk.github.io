@@ -20,7 +20,7 @@ function Controller() {
                     The Controller module is the main entry point for the extension. All modules are
                     directed and called within this module’s entry file. All general styling,
                     variables, and styled components can also be found in this module (See{' '}
-                    <Link to='/extension/style-guidelines'>Style Guidelines</Link> for more). In
+                    <Link to='/extension/style-guide/overview'>Style Guidelines</Link> for more). In
                     addition to styling, all JavaScript required for HTML components to operate
                     (such as the mobile navbar and dropdown components) are also initialized in this
                     module.

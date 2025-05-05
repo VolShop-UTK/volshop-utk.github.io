@@ -10,7 +10,7 @@ import ModulesComponents from './pages/ExtensionPage/Modules/Components.jsx';
 import Components from './pages/ExtensionPage/Style/Components.jsx';
 import BigOrangeDealPage from './pages/ExtensionPage/Modules/BigOrangeDealPage.jsx';
 import Controller from './pages/ExtensionPage/Modules/Controller.jsx';
-import StyleGuide from './pages/ExtensionPage/Style/StyleGuide.jsx';
+import StyleGuide from './pages/ExtensionPage/Style/StyleOverview.jsx';
 import CustomerServiceInfo from './pages/ExtensionPage/Modules/CustomerServiceInfo.jsx';
 import ThemePage from './pages/ThemePage/ThemePage.jsx';
 import Footer from './pages/ExtensionPage/Modules/Footer.jsx';
@@ -18,6 +18,8 @@ import ModulesHome from './pages/ExtensionPage/Modules/ModulesHome.jsx';
 import TotalAccess from './pages/ExtensionPage/Modules/TotalAccess.jsx';
 import VolBooks from './pages/ExtensionPage/Modules/VolBooks.jsx';
 import VolTech from './pages/ExtensionPage/Modules/VolTech.jsx';
+import InclusiveAccess from './pages/ExtensionPage/Modules/InclusiveAccess.jsx';
+import StyleOverview from './pages/ExtensionPage/Style/StyleOverview.jsx';
 
 function App() {
     document.querySelectorAll('h2, h3, h4, h5, h6').forEach(function (header) {
@@ -43,12 +45,13 @@ function App() {
                     <Route path='modules/customer-service-info' element={<CustomerServiceInfo />} />
                     <Route path='modules/footer' element={<Footer />} />
                     <Route path='modules/home' element={<ModulesHome />} />
-                    <Route path='modules/total-access' element={<TotalAccess />} />
+                    <Route path='modules/volbooks/total-access' element={<TotalAccess />} />
+                    <Route path='modules/volbooks/inclusive-access' element={<InclusiveAccess />} />
                     <Route path='modules/volbooks' element={<VolBooks />} />
                     <Route path='modules/voltech' element={<VolTech />} />
 
-                    <Route path='style-guidelines' element={<StyleGuide />} />
-                    <Route path='components' element={<Components />} />
+                    <Route path='style-guide/overview' element={<StyleOverview />} />
+                    <Route path='style-guide/components' element={<Components />} />
                 </Route>
                 <Route path='/theme' element={<ThemePage />}>
                     {/* <Route index element={<ExtensionLandingPage />} /> */}
