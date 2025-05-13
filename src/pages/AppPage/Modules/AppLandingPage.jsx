@@ -41,7 +41,7 @@ function AppLandingPage() {
                 <p>Below is a diagram of the high level architecture of the application:</p>
 
                 <div className='content-image-wrapper'>
-                    <img src={appDiagram} alt='' width={'50%'} />
+                    <img src={appDiagram} alt='Overview of App Diagram' />
                 </div>
             </div>
 
@@ -71,6 +71,11 @@ function AppLandingPage() {
                             <li>
                                 <a href='https://flutter.dev/'>
                                     <code>Flutter</code>
+                                </a>
+                            </li>
+                            <li>
+                                <a href='https://bloclibrary.dev/'>
+                                    <code>Bloc</code>
                                 </a>
                             </li>
                             <li>

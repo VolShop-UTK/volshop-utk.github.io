@@ -17,12 +17,12 @@
 }
 
 .configField-table td:nth-last-child(-n + 2),
-th:nth-last-child(-n + 2) {
+.configField-table th:nth-last-child(-n + 2) {
     text-align: center;
 }
 
 .configField-table td:nth-child(4),
-th:nth-child(4) {
+.configField-table th:nth-child(4) {
     padding-left: 2em;
 }
 

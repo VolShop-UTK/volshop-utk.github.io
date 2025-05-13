@@ -1,0 +1,24 @@
+.permissions-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.permissions-table,
+.permissions-table tr,
+.permissions-table th,
+.permissions-table td {
+    text-align: left;
+    border: 1px solid white;
+    padding: 0.5em;
+    vertical-align: text-top;
+}
+
+.permissions-table th:nth-child(1),
+.permissions-table td:nth-child(1) {
+    width: 20%;
+}
+
+.permissions-table th:nth-child(2),
+.permissions-table td:nth-child(2) {
+    width: 10%;
+}

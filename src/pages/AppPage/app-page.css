@@ -8,3 +8,25 @@
     margin: 0;
     flex: 1;
 }
+
+.state-management-diagrams {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.state-management-diagrams div {
+    width: 100%;
+}
+
+.state-management-diagrams div img {
+    width: 100%;
+}
+
+@media screen and (min-width: 800px) {
+    .state-management-diagrams {
+        flex-direction: row;
+    }
+    .state-management-diagrams div {
+        width: 50%;
+    }
+}

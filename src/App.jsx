@@ -20,6 +20,8 @@ import InclusiveAccess from './pages/ExtensionPage/Modules/InclusiveAccess.jsx';
 import StyleOverview from './pages/ExtensionPage/Style/StyleOverview.jsx';
 import Entry from './pages/ExtensionPage/Modules/Entry.jsx';
 import AppLandingPage from './pages/AppPage/Modules/AppLandingPage.jsx';
+import RestletsPage from './pages/AppPage/Modules/RestletsPage.jsx';
+import StateManagement from './pages/AppPage/Modules/StateManagement.jsx';
 
 function App() {
     document.querySelectorAll('h2, h3, h4, h5, h6').forEach(function (header) {
@@ -37,6 +39,8 @@ function App() {
                 <Route path='/' element={<Home />} />
                 <Route path='/app' element={<AppPage />}>
                     <Route index element={<AppLandingPage />} />
+                    <Route path='restlets' element={<RestletsPage />} />
+                    <Route path='frontend/state-management' element={<StateManagement />} />
                 </Route>
                 <Route path='/extension' element={<ExtensionPage />}>
                     <Route index element={<ExtensionLandingPage />} />
